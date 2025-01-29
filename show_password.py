@@ -19,8 +19,12 @@ class DisplayPassword(plugins.Plugin):
     __author__ = '@vanshksingh and @avipars'
     __version__ = '1.0.1'
     __license__ = 'GPL3'
+    __name__ = "DisplayPassword"
     __description__ = 'A plugin to display recently cracked passwords'
-
+    __defaults__ = {
+        "enabled": False,
+    }
+    
     def on_loaded(self):
         logging.info("display-password loaded")
 
